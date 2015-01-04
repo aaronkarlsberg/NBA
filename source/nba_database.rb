@@ -10,21 +10,21 @@ class Database
   end
 
   def make_table
-    @nba_data.execute("CREATE TABLE 'nbastats' (name STRING, position STRING, number STRING, points STRING);")
+    @nba_data.execute("CREATE TABLE 'nba_stats' (name STRING, position STRING, number STRING, points STRING);")
   end
 
   def insert_values
     @roster.each do |player|
-      @nba_data.execute("INSERT INTO nbastats VALUES (?, ?, ?, ?)", [player.name, player.position, player.number, player.points])
+      @nba_data.execute("INSERT INTO nba_stats VALUES (?, ?, ?, ?)", [player.name, player.position, player.number, player.points])
     end
   end
 
     def show_table_values
-      @nba_data.execute('select * from nbastats')
+      @nba_data.execute('select * from nba_stats')
     end
 end
 
-stat_file = Nokogiri::HTML(open("http://www.nba.com/lakers/stats"))
+stat_file = "http://www.nba.com/lakers/stats"
 
 nba_table = Database.new(stat_file)
 
