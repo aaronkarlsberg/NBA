@@ -1,9 +1,8 @@
 require 'open-uri'
 require 'nokogiri'
 
-
 module Parsers
-  class NbaParser
+  class HtmlParser
     attr_reader :player_fields
     def initialize(table_row)
       @table_row = table_row
@@ -16,24 +15,3 @@ module Parsers
     end
   end
 end
-
-
-# test = Parsers::HtmlParser.new(stat_table)
-# p test.player_fields
-
-#   class CsvParser
-#   end
-
-#   class YamlParser
-#   end
-
-#   class JsonParser
-#   end
-
-# end
-
-
-
-
-
-
