@@ -19,7 +19,7 @@ end
 class Roster
   attr_reader :roster
   def initialize(file)
-    @file = file
+    @file = Nokogiri::HTML(open(file))
     @roster = []
     populate_roster
   end
