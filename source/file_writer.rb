@@ -24,6 +24,7 @@ module SavetoFiletype
     class SaveYAML
       def initialize(csv_file)
         @csv_file = csv_file
+         # @csv_file = CSV.read(csv_file)
       end
       def save_as_yaml
         File.write('nba_stats.yaml', @csv_file.to_yaml)
