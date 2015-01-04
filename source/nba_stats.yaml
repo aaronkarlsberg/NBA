@@ -1,0 +1,67 @@
+--- !ruby/object:SaveCSV
+roster:
+- !ruby/object:Player
+  name: Kobe Bryant
+  position: Guard
+  number: '24'
+  points: '713'
+- !ruby/object:Player
+  name: Carlos Boozer
+  position: Forward
+  number: '5'
+  points: '423'
+- !ruby/object:Player
+  name: Ronnie Price
+  position: Guard
+  number: '9'
+  points: '170'
+- !ruby/object:Player
+  name: Nick Young
+  position: Forward-Guard
+  number: ''
+  points: '337'
+- !ruby/object:Player
+  name: Jordan Hill
+  position: Center
+  number: '27'
+  points: '394'
+- !ruby/object:Player
+  name: Wayne Ellington
+  position: Guard
+  number: '2'
+  points: '181'
+- !ruby/object:Player
+  name: Wesley Johnson
+  position: Forward
+  number: '11'
+  points: '320'
+- !ruby/object:Player
+  name: Ed Davis
+  position: Forward
+  number: '21'
+  points: '268'
+- !ruby/object:Player
+  name: Jeremy Lin
+  position: Guard
+  number: '17'
+  points: '349'
+- !ruby/object:Player
+  name: Robert Sacre
+  position: Center
+  number: '50'
+  points: '129'
+- !ruby/object:Player
+  name: Ryan Kelly
+  position: Forward
+  number: '4'
+  points: '13'
+- !ruby/object:Player
+  name: Jordan Clarkson
+  position: Guard
+  number: '6'
+  points: '69'
+- !ruby/object:Player
+  name: Julius Randle
+  position: Forward
+  number: '30'
+  points: '2'

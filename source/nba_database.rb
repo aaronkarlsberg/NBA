@@ -28,7 +28,7 @@ stat_file = "http://www.nba.com/lakers/stats"
 
 nba_table = Database.new(stat_file)
 
-puts nba_table.show_table_values
+# puts nba_table.show_table_values
 
 
 
