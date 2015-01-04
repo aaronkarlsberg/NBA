@@ -1,4 +1,4 @@
---- !ruby/object:SaveCSV
+--- !ruby/object:SavetoFiletype::SaveCSV
 roster:
 - !ruby/object:Player
   name: Kobe Bryant
