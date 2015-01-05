@@ -10,6 +10,7 @@ class Database
   end
 
   def make_table
+    @nba_data.execute("DROP TABLE IF EXISTS 'nba_stats'")
     @nba_data.execute("CREATE TABLE 'nba_stats' (name STRING, position STRING, number STRING, points STRING);")
   end
 
