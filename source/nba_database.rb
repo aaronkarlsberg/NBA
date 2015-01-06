@@ -11,12 +11,14 @@ class Database
 
   def make_table
     @nba_data.execute("DROP TABLE IF EXISTS 'nba_stats'")
-    @nba_data.execute("CREATE TABLE 'nba_stats' (name STRING, position STRING, number STRING, points STRING);")
+    @nba_data.execute("CREATE TABLE 'nba_stats' (id INTEGER PRIMARY KEY AUTOINCREMENT, name STRING, position STRING, number STRING, points STRING);")
   end
+
+
 
   def insert_values
     @roster.each do |player|
-      @nba_data.execute("INSERT INTO nba_stats VALUES (?, ?, ?, ?)", [player.name, player.position, player.number, player.points])
+      @nba_data.execute("INSERT INTO nba_stats (name, position, number, points) VALUES (?, ?, ?, ?)", [player.name, player.position, player.number, player.points])
     end
   end
 
@@ -25,9 +27,9 @@ class Database
     end
 end
 
-stat_file = "http://www.nba.com/lakers/stats"
+nba_site = "http://www.nba.com/lakers/stats"
 
-nba_table = Database.new(stat_file)
+nba_table = Database.new(nba_site)
 
 # puts nba_table.show_table_values
 
