@@ -1,17 +1,17 @@
 require 'open-uri'
 require 'nokogiri'
 
-module Parsers
-  class HtmlParser
-    attr_reader :player_fields
-    def initialize(table_row)
-      @table_row = table_row
-      @player_fields = {
-       name: @table_row.css('.playerName').text,
-       position: @table_row.css('.playerPosition').text,
-       number: @table_row.css('.playerNumber').text,
-       points: @table_row.css('.pts').text
+module Parser
+
+    def self.convert_to_player_args(table_row)
+      {
+       name: table_row.css('.playerName').text,
+       position: table_row.css('.playerPosition').text,
+       number: table_row.css('.playerNumber').text,
+       points: table_row.css('.pts').text,
+       rebounds: table_row.css('.reb').text,
+       assists: table_row.css('.ast').text
      }
     end
-  end
+
 end

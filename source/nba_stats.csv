@@ -1,14 +1,15 @@
-name,position,number,points
-Kobe Bryant,Guard,24,713
-Carlos Boozer,Forward,5,423
-Ronnie Price,Guard,9,170
-Nick Young,Forward-Guard,"",337
-Jordan Hill,Center,27,394
-Wayne Ellington,Guard,2,181
-Wesley Johnson,Forward,11,320
-Ed Davis,Forward,21,268
-Jeremy Lin,Guard,17,349
-Robert Sacre,Center,50,129
-Ryan Kelly,Forward,4,13
-Jordan Clarkson,Guard,6,69
-Julius Randle,Forward,30,2
+name,position,number,points,rebounds,assists
+Kobe Bryant,Guard,24,782,199,197
+Carlos Boozer,Forward,5,543,311,52
+Ronnie Price,Guard,9,212,65,152
+Nick Young,Forward-Guard,"",494,81,34
+Jordan Hill,Center,27,562,368,64
+Wayne Ellington,Guard,2,305,108,47
+Wesley Johnson,Forward,11,394,156,76
+Ed Davis,Forward,21,366,324,44
+Jeremy Lin,Guard,17,472,113,207
+Robert Sacre,Center,50,151,122,23
+Ryan Kelly,Forward,4,61,48,11
+Jordan Clarkson,Guard,6,139,38,25
+Julius Randle,Forward,30,2,"",""
+Tarik Black,Center-Forward,28,162,169,12
